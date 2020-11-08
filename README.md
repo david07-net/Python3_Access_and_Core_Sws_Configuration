@@ -1,4 +1,4 @@
-# Python3_Access_and_Distribution_and_Core_Sws_Configuration
+# Python3_Access_and_Distribution_Sws_Configuration
 
 This is a tutorial on how to connect and configure 3 Access switches and Core/Distribution switches. For this tutorial we are using the library knows at [Netmiko](https://github.com/ktbyers/netmiko). Please feel free to go in the link for more information. We are going to configure the devices differently depending or their purpuse. We will use the Hostname of the device to have that information. We will have a file with the ip addresses to connect and another file with the hostnames of the devices so we can compare those with the ones we get from the device and send the right configuration. 
 
