@@ -230,7 +230,7 @@ no shutdown
 !
 !# Enable IPv4 Routing
 !
-no ip routing
+ip routing
 !
 !
 !# Creating VLANs
