@@ -122,6 +122,8 @@ enable secret cisco
 !
 username david priv 15 pass cisco
 !
+spanning-tree vlan 1 root primary
+!
 ip domain-name pythonccie.com
 !
 ip domain-lookup
@@ -153,6 +155,8 @@ hostname DSw2
 enable secret cisco
 !
 username david priv 15 pass cisco
+!
+spanning-tree vlan 1 root secondary
 !
 ip domain-name pythonccie.com
 !
@@ -355,3 +359,12 @@ for devices in devices_list:
     else:
         print(" For the Device  " + int_name + "\n We dont have commands \n")
 ```
+## References
+
+1. [Udemy-Python network programming for Network Engineers(Python3)](https://www.udemy.com/course/python-network-programming-for-network-engineers-python-3/)
+2. [Netmiko](https://github.com/ktbyers/netmiko)
+3. [Cisco Ethernet Management port](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9400/software/release/16-10/configuration_guide/int_hw/b_1610_int_and_hw_9400_cg/configuring_ethernet_management_port.pdf)
+4. [EtherChannel Configuration](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst2960x/software/15-2_2_e/consolidated_guide/configuration_guide/b_1522e_consolidated_2960x_cg/b_consolidated_152ex_2960-X_cg_chapter_0111.html)
+5. [Spanning-Tree Configuration](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst2960x/software/15-2_2_e/consolidated_guide/configuration_guide/b_1522e_consolidated_2960x_cg/b_consolidated_152ex_2960-X_cg_chapter_01111.html)
+
+
