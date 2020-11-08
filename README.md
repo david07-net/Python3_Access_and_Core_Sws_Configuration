@@ -83,7 +83,7 @@ login local
 
 ```
 !
-hostname ASw1
+hostname ASw3
 !
 !
 enable secret cisco
